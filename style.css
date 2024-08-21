@@ -1,0 +1,115 @@
+*{ /*en esta parte de css evitamos que el margen alcance toda la pagina y que no haya scroll laterla */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{ /* en esta parte podemos declarar variables( colores, height) que se repiten en nuestro css */
+    /*--primary-color: blue; */ 
+    /*para declarar en un padding, color, background-color se escribe background-color: var(--primary-color */
+    --primary-color: #7d047d; 
+
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+    
+}
+.initial{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 0.5rem solid silver;
+    align-items: center;
+}
+.page_title{
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+.page_nav{
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    border-radius: 1rem;
+}
+.page_nav a{
+    margin: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    color: aliceblue;
+    background-color: var(--primary-color);
+
+}
+.content{
+    display: flex;
+    height: 100vh;
+}
+.principal{
+    width: 60%;
+    min-height: 85rem;
+    /*overflow: hidden;*/
+    background-color: var(--primary-color);
+    border: 0.1rem solid black;
+}
+.page_title2{
+    padding: 1rem;
+    font-size: 3rem;
+}
+.new{
+    padding: 1rem;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.page_img{
+  padding: 2rem;
+  width: 50rem;
+  max-width: 100%;
+  height: auto;
+}
+.secondary{
+    width: 40%;
+    min-height: 85rem;
+    border: 0.1rem solid black;
+    color: aliceblue;
+    background-color: aqua;
+}
+.page_title3{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.decks{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.item{
+    margin: 1rem;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(75, 79, 83);
+    color: black;
+}
+.page_title4{
+    padding-top: 10rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.pokeimg{
+    width: 8rem;
+}
+/*footer{
+    height: 20%;
+    background-color: aliceblue;
+}*/
